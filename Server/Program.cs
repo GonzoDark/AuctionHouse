@@ -24,12 +24,12 @@ namespace Server
     {
         private List<ClientData> listClients = new List<ClientData>();  
         private TcpListener listener;
-        private int port = 5000;
+        private int port = 9001;
         private string ipString = "127.0.0.1";
         public Server()
         {
             openConnection();
-
+            Console.WriteLine("Starting server: " + ipString + ":" + port);
             new Thread(listenerForClients).Start();
             
         }
@@ -40,6 +40,7 @@ namespace Server
             while (true)
             {
                 Socket clientSocket = listener.AcceptSocket();
+                Console.WriteLine("Client connected");
                 listClients.Add(new ClientData(clientSocket));
             }
         }

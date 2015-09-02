@@ -1,2 +1,16 @@
 C:\Users\GonzoDark\Documents\Visual Studio 2013\Projects\Klient\Klient\bin\Debug\Klient.exe.config
 C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\bin\Debug\Klient.exe.config
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\bin\Debug\Klient.exe
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\bin\Debug\Klient.pdb
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\bin\Debug\ServerData.dll
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\bin\Debug\ServerData.pdb
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\obj\Debug\Klient.csprojResolveAssemblyReference.cache
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\obj\Debug\MainWindow.baml
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\obj\Debug\MainWindow.g.cs
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\obj\Debug\App.g.cs
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\obj\Debug\Klient_MarkupCompile.cache
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\obj\Debug\Klient.g.resources
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\obj\Debug\Klient.Properties.Resources.resources
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\obj\Debug\Klient.csproj.GenerateResource.Cache
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\obj\Debug\Klient.exe
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\obj\Debug\Klient.pdb
