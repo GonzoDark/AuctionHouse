@@ -1,1 +1,2 @@
 C:\Users\GonzoDark\Documents\Visual Studio 2013\Projects\Klient\Klient\bin\Debug\Klient.exe.config
+C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\bin\Debug\Klient.exe.config
