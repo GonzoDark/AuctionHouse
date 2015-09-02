@@ -8,5 +8,22 @@ namespace ServerData
 {
     public class Packet
     {
+        public PacketType PacketType;
+        public byte[] ToByte()
+        {
+            //Implementer ToByte
+            return null;
+        }
+
+        public Packet(byte[] packetBytes)
+        {
+            
+        }
+    }
+
+    public enum PacketType
+    {
+        Chat,
+        Offer
     }
 }
