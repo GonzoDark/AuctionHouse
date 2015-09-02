@@ -39,22 +39,6 @@ namespace Klient {
     /// </summary>
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
-        
-        #line 6 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox txtBox_input;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 7 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox txtBox_output;
-        
-        #line default
-        #line hidden
-        
         private bool _contentLoaded;
         
         /// <summary>
@@ -83,21 +67,6 @@ namespace Klient {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
-            switch (connectionId)
-            {
-            case 1:
-            this.txtBox_input = ((System.Windows.Controls.TextBox)(target));
-            
-            #line 6 "..\..\MainWindow.xaml"
-            this.txtBox_input.KeyDown += new System.Windows.Input.KeyEventHandler(this.txtBox_input_KeyDown);
-            
-            #line default
-            #line hidden
-            return;
-            case 2:
-            this.txtBox_output = ((System.Windows.Controls.TextBox)(target));
-            return;
-            }
             this._contentLoaded = true;
         }
     }

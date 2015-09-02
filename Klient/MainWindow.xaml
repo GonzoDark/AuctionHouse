@@ -3,6 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <TextBox Name="txtBox_input" HorizontalAlignment="Left" Height="23" Margin="53,230,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="291" KeyDown="txtBox_input_KeyDown"/>
+        <TextBox Name ="txtBox_output" HorizontalAlignment="Left" Height="145" Margin="53,39,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="291"/>
+        <TextBox HorizontalAlignment="Left" Height="145" Margin="373,39,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="373,213,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="373,243,0,0" VerticalAlignment="Top" Width="60"/>
+
     </Grid>
 </Window>

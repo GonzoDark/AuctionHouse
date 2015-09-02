@@ -1,0 +1,5 @@
+C:\Users\J\Documents\AuctionHouse2\ServerData\bin\Debug\ServerData.dll
+C:\Users\J\Documents\AuctionHouse2\ServerData\bin\Debug\ServerData.pdb
+C:\Users\J\Documents\AuctionHouse2\ServerData\obj\Debug\ServerData.csprojResolveAssemblyReference.cache
+C:\Users\J\Documents\AuctionHouse2\ServerData\obj\Debug\ServerData.dll
+C:\Users\J\Documents\AuctionHouse2\ServerData\obj\Debug\ServerData.pdb
