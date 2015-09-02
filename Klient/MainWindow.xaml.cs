@@ -39,6 +39,8 @@ namespace Klient
             if (Keyboard.IsKeyDown(Key.Enter))
             {
                 NewClient.ClientWriter(txtBox_input.Text);
+                txtBox_input.Text = "";
+
 
             }
         }
