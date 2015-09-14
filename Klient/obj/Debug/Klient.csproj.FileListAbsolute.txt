@@ -14,3 +14,6 @@ C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\obj\Debug\Klient.P
 C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\obj\Debug\Klient.csproj.GenerateResource.Cache
 C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\obj\Debug\Klient.exe
 C:\Users\Sander Magnussen\Desktop\GitHub\Auction House\Klient\obj\Debug\Klient.pdb
+C:\Users\J\Documents\AuctionHouse2\Klient\bin\Debug\Klient.exe.config
+C:\Users\J\Documents\AuctionHouse2\Klient\obj\Debug\Klient.exe
+C:\Users\J\Documents\AuctionHouse2\Klient\obj\Debug\Klient.pdb
