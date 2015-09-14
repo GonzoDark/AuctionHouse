@@ -46,7 +46,7 @@ namespace Server
             new Thread(Server.OpenReader).Start(clientSocket);
         }
 
-        public void writeToClient(Packet packet)
+        public void writeToClient(Packet packet) // ingen packets
         {
             clientSocket.Send(packet.ToByte());
 
