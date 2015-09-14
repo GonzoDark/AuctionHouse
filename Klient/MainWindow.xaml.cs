@@ -38,8 +38,8 @@ namespace Klient
         {
             if (Keyboard.IsKeyDown(Key.Enter))
             {
-                NewClient.ClientWriter(txtBox_input.Text);
-                txtBox_input.Text = "";
+                NewClient.ClientWriter("Bud: " + cbox_Items.SelectedItem + txtBox_Bid.Text);
+                txtBox_Bid.Text = "";
 
 
             }
@@ -50,14 +50,18 @@ namespace Klient
             while (true)
             {
                 string input = DataManager(NewClient.ClientReader());
-                Dispatcher.Invoke(new Action(() => txtBox_output.Text = input));
+               // Dispatcher.Invoke(new Action(() => txtBox_output.Text = input));
             }            
         }
         public string DataManager(string input)
         {
-            if(input == "gedeost")
+            string[] inputarray = input.Split(' ');
+
+            if(inputarray[0] == "højeste")
             { return "Leif er awesome!"; }
             else return input;
         }
+
+       
     }
 }

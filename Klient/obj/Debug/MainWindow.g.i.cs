@@ -117,6 +117,12 @@ namespace Klient {
             
             #line default
             #line hidden
+            
+            #line 6 "..\..\MainWindow.xaml"
+            this.txtBox_Bid.TextChanged += new System.Windows.Controls.TextChangedEventHandler(this.txtBox_Bid_TextChanged);
+            
+            #line default
+            #line hidden
             return;
             case 2:
             this.txtBox_HighestBid = ((System.Windows.Controls.TextBox)(target));
