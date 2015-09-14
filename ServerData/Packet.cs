@@ -9,6 +9,7 @@ namespace ServerData
     public class Packet
     {
         public PacketType PacketType;
+        public string Chat;
         public byte[] ToByte()
         {
             //Implementer ToByte

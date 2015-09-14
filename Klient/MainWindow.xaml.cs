@@ -17,6 +17,7 @@ using System.Net.Sockets;
 using System.Threading;
 //using System.Windows.Threading;
 using System.IO;
+using ServerData;
 
 namespace Klient
 {
@@ -49,15 +50,26 @@ namespace Klient
         {
             while (true)
             {
-                string input = DataManager(NewClient.ClientReader());
+                //string input = DataManager(NewClient.ClientReader());
                 Dispatcher.Invoke(new Action(() => txtBox_output.Text = input));
             }            
         }
-        public string DataManager(string input)
+        public string DataManager(Packet packet)
         {
-            if(input == "gedeost")
-            { return "Leif er awesome!"; }
-            else return input;
+
+            switch (packet.PacketType)
+            {
+                case PacketType.Chat:
+                    showChat(packet);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void showChat(Packet packet)
+        {
+            Dispatcher.Invoke(new Action(() => txtBox_output.Text = packet.Chat));
         }
     }
 }
