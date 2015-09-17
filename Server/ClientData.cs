@@ -45,7 +45,11 @@ namespace Server
             new Thread(OpenReader).Start();
         }
 
+<<<<<<< HEAD
         public void writeToClient(string message)
+=======
+        public void writeToClient(Packet packet) // ingen packets
+>>>>>>> origin/master
         {
             writer.WriteLine(message);
             writer.Flush();
