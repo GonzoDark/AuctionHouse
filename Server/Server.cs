@@ -13,8 +13,6 @@ namespace Server
 {
     class Server
     {
-
-
         public static AuctionHouse Auction = new AuctionHouse();
         private static List<ClientData> listClients;
         private TcpListener listener;
@@ -47,7 +45,7 @@ namespace Server
 
         }
 
-        public static void writeToAll(string message)
+        public static void writeToAllItemSold(string message)
         {
             foreach (ClientData clientData in listClients)
             {
@@ -55,7 +53,7 @@ namespace Server
             }
         }
 
-        public static void writeToAll(int numberSold)
+        public static void writeToAllItemSold(int numberSold)
         {
             foreach (ClientData clientData in listClients)
             {

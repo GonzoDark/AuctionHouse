@@ -9,52 +9,44 @@ namespace Server
 {
     class AuctionHouse
     {
-        
+        private int id = 0; 
         private List<Items> itemList = new List<Items>();
-        private delegate void soldDelegate(int number);
-
-        private event soldDelegate soldItemEvent;
-        
-        private delegate void bidDelegate(string message);
-
-        private event bidDelegate bidItemEvent;
- 
 
         public AuctionHouse()
         {
-            soldItemEvent += RemoveItem;
-            soldItemEvent += Server.writeToAll;
-
-            bidItemEvent += Server.writeToAll;
+            
+            Items i1 = new Items();
+            i1.Vurdering = 300;
+            i1.Type = "Stol";
+            Items i2 = new Items();
+            i2.Vurdering = 250;
+            i2.Type = "Computer";
+            Items i3 = new Items();
+            i3.Vurdering = 100;
+            i3.Type = "N64 MarioKart";
+            AddItem(i1);
+            AddItem(i2);
+            AddItem(i3);
         }
-
         public bool Bid(int itemSubscribed, double currentBet)
         {
-            
-            foreach (Items item in itemList )
+
+            foreach (Items item in itemList)
             {
                 if (item.Id == itemSubscribed)
                 {
-                    
-                    if (item.HighestOffer < currentBet)
-                    {
-                        item.HighestOffer = currentBet;
-                        bidItemEvent.Invoke("/i " + itemSubscribed + " " + item.HighestOffer);
+                    item.HighestOffer = currentBet;
                         return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
                 }
-
             }
+            return false;
         }
         public void AddItem(Items item)
         {
+            id++;
+            item.Id = id;
             itemList.Add(item);
         }
-
         public void RemoveItem(int number)
         {
             foreach (Items item in itemList)
@@ -63,7 +55,6 @@ namespace Server
                     itemList.Remove(item);
             }  
         }
-
         public bool FindItem(int number)
         {
             foreach (Items item in itemList)
@@ -72,6 +63,16 @@ namespace Server
                     return true;
             }
             return false;
+        }
+        public string GetListe()
+        {
+            string tabelItems = "/la ";
+            foreach (Items i in itemList)
+            {
+                tabelItems += i.Id + " " + i.Vurdering + " " + i.HighestOffer + " " + i.Type + "/n";
+
+            }
+            return tabelItems;
         }
     }
 }

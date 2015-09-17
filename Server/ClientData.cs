@@ -27,6 +27,7 @@ namespace Server
         private StreamWriter writer;
         private StreamReader reader;
         private int itemSubscribed;
+        private Socket clientSocket;
         public Socket ClientSocket
         {
             get
@@ -65,29 +66,34 @@ namespace Server
         {
             ///commands
             string[] messageArray = message.Split(' ');
-            if (messageArray[0] == "/a")
+            if (messageArray[0] == "/s")
             {
                 if (Server.Auction.FindItem(int.Parse(messageArray[1])))
                 {
                     itemSubscribed = int.Parse(messageArray[1]);
+                    writeToClient("/s "+ itemSubscribed);
                 }
                 else
                 {
                     writeToClient("Cannot find item");
                 }
             }
-            if (messageArray[0] == "/ua")
+            if (messageArray[0] == "/us")
             {
                 itemSubscribed = 0;
+                writeToClient("/us 0");
             }
             if (messageArray[0] == "/o" && itemSubscribed != 0)
             {
                 double price = double.Parse(messageArray[1]);
                 bool answer = Server.Auction.Bid(itemSubscribed, price);
-                if (answer) writeToClient("Offer accepted: " + price);
-                else writeToClient("Offer denied");
+                if (answer) writeToClient("/oa ");
+                else writeToClient("/od");
             }
-            
+            if (messageArray[0] == "/la")
+            {
+                writeToClient(Server.Auction.GetListe());
+            }
             else
             {
                 writeToClient("Unknown command");
