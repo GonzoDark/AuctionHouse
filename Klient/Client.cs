@@ -7,6 +7,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.IO;
+using ServerData;
 
 namespace Klient
 {
@@ -14,9 +15,9 @@ namespace Klient
     {
         StreamReader reader;
         StreamWriter writer;
-        public Client(string address, int ip)
+        public Client(string address, int port)
         {
-            TcpClient Connection = new TcpClient(address,ip);
+            TcpClient Connection = new TcpClient(address,port);
             NetworkStream netstream = Connection.GetStream();
             reader = new StreamReader(netstream);
             writer = new StreamWriter(netstream);

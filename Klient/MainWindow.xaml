@@ -1,13 +1,22 @@
 ﻿<Window x:Class="Klient.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="330" Width="615">
     <Grid>
-        <TextBox Name="txtBox_input" HorizontalAlignment="Left" Height="23" Margin="53,230,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="291" KeyDown="txtBox_input_KeyDown"/>
-        <TextBox Name ="txtBox_output" HorizontalAlignment="Left" Height="145" Margin="53,39,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="291"/>
-        <TextBox HorizontalAlignment="Left" Height="145" Margin="373,39,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="373,213,0,0" VerticalAlignment="Top" Width="60"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="373,243,0,0" VerticalAlignment="Top" Width="60"/>
+        <TextBox IsEnabled="False" Name="txtBox_Bid" HorizontalAlignment="Left" Height="23" Margin="53,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="291" KeyDown="txtBox_input_KeyDown"/>
+        <TextBox Name="txtBox_HighestBid" HorizontalAlignment="Left" Height="22" Margin="471,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Label Content="Genstande" HorizontalAlignment="Left" Margin="399,132,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label Content="Tid tilbage" HorizontalAlignment="Left" Margin="406,89,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label Content="Bud" HorizontalAlignment="Left" Margin="10,238,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtbox_estimate" HorizontalAlignment="Left" Height="22" Margin="471,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Label Content="Højeste bud" HorizontalAlignment="Left" Margin="397,18,0,0" VerticalAlignment="Top"/>
+        <Label Content="Vurdering" HorizontalAlignment="Left" Margin="399,62,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbox_Items" HorizontalAlignment="Left" Margin="471,132,0,0" VerticalAlignment="Top" Width="120"/>
+        <Image Name ="image_CurrentItem" HorizontalAlignment="Left" Height="180" Margin="53,35,0,0" VerticalAlignment="Top" Width="291"/>
+        <TextBox Name="txtBox_TimeLeft" HorizontalAlignment="Left" Height="22" Margin="471,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <CheckBox IsHitTestVisible="False" Name="checkbox_Status" Content="Har højeste bud" HorizontalAlignment="Left" Margin="471,45,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.077,0.97"/>
+        <Label Visibility="Hidden" Name="label_SubscribeWarning" Content="Vælg en salgsgenstand" HorizontalAlignment="Left" Margin="399,173,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbox_ItemSubscribed" Content="Subscribed" HorizontalAlignment="Left" Margin="524,179,0,0" VerticalAlignment="Top" Checked="cbox_ItemSubscribed_Checked"/>
 
     </Grid>
 </Window>
